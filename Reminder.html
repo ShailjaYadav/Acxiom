@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Reminder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #reminder-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="reminder-container">
+        <h2>Set a new Reminder</h2>
+
+        <form>
+            <label>3. Select a Date:</label>
+            <!-- Placeholder for calendar icon -->
+
+            <label>4. Subject:
+            <select>
+                <option value="subject1">Subject 1</option>
+                <option value="subject2">Subject 2</option>
+                <option value="subject3">Subject 3</option>
+                <!-- Add more subjects as needed -->
+            </select>
+        </label>
+
+            <label>5. Add description:</label>
+            <textarea></textarea>
+
+            <label>6. Email Address:</label>
+            <input type="email" required>
+
+            <label>7. Contact No:</label>
+            <input type="tel" required>
+
+            <label>8. Recur for next:</label>
+            <input type="checkbox" id="7days" name="recur" value="7days">
+            <label for="7days">7 Days</label>
+
+            <input type="checkbox" id="5days" name="recur" value="5days">
+            <label for="5days">5 Days</label>
+
+            <input type="checkbox" id="3days" name="recur" value="3days">
+            <label for="3days">3 Days</label>
+
+            <input type="checkbox" id="2days" name="recur" value="2days">
+            <label for="2days">2 Days</label>
+
+            <div>
+                <button>Back</button>
+                <button>Confirm</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
